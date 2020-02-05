@@ -1,0 +1,11 @@
+#crontab -e
+0 22 * * * rsync -av --delete -e 'ssh -p 12345' root@192.168.0.1:/Directory2/ /Directory1/
+
+และไม่ให้ถามพาสเวิด root
+1...user1@client1:~$ ssh-keygen -t dsa
+2..user1@client1:~$ ssh-copy-id -i ~/.ssh/id_dsa.pub
+root@server1
+ทดสอบ
+3...user1@client1:~$ ssh server1 -l root
+
+ถ้าเพิ่ม server ให้ทำแค่ ข้อ 2-3
