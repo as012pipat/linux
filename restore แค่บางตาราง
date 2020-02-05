@@ -1,0 +1,1 @@
+zgrep ^"INSERT INTO \`patient" </db/my_db.gz | mysql -uroot -p my_db
