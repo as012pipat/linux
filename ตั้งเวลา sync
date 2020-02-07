@@ -3,8 +3,7 @@
 
 และไม่ให้ถามพาสเวิด root
 1...user1@client1:~$ ssh-keygen -t dsa
-2..user1@client1:~$ ssh-copy-id -i ~/.ssh/id_dsa.pub
-root@server1
+2..user1@client1:~$ ssh-copy-id -i ~/.ssh/id_dsa.pub root@server1
 ทดสอบ
 3...user1@client1:~$ ssh server1 -l root
 
