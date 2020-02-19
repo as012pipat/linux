@@ -1,0 +1,5 @@
+เปิด port เว็บ
+[root@centos7 ~]# firewall-cmd --permanent --add-port=80/tcp
+success
+[root@centos7 ~]# firewall-cmd --reload
+success
