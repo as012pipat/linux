@@ -3,3 +3,8 @@
 success
 [root@centos7 ~]# firewall-cmd --reload
 success
+
+
+
+CENTOS6
+iptables -I INPUT 5 -i eth0 -p tcp --dport 3306 -m state --state NEW,ESTABLISHED -j ACCEPT
